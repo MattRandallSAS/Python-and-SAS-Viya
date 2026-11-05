@@ -8,8 +8,8 @@
 - Largest disagreement at 2020-03-13: garch_vol=0.1304, realised_vol_30d=0.0763
 - Strongest GPRD-vs-returns correlation at lag -8 (-0.024)
 - Strongest GPRD-vs-|returns| correlation at lag 4 (-0.068)
-- Granger causality gprd->returns (lag 1): p=0.6762
-- Granger causality gprd->realised_vol_30d (lag 1): p=0.0890
+- Granger causality gprd->returns (lag 1): p=0.6764
+- Granger causality gprd->realised_vol_30d (lag 1): p=0.0889
 - Returns on high_gpr days: mean=0.00341 vs low_gpr: mean=0.00175, Welch t-test p=0.3283
 - Realised vol on high_gpr days: mean=0.03065 vs low_gpr: mean=0.03207, Welch t-test p=0.0269
 - Rolling 1yr GPRD/vol correlation ranges from -0.447 to 1.000 - stable relationship over time
