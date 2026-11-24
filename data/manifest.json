@@ -2,7 +2,7 @@
   "description": "Synthetic AML customer-month data. Not real customer data.",
   "generator_seed": 42,
   "target": "sar_flag",
-  "created_utc": "2026-11-24T09:03:49.325586+00:00",
+  "created_utc": "2026-11-24T09:05:20.021204+00:00",
   "created_in": "SAS Studio",
   "files": {
     "data/aml_model.csv": {
