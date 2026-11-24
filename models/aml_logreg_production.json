@@ -1,0 +1,35 @@
+{
+  "name": "aml_logreg_production",
+  "status": "production",
+  "algorithm": "LogisticRegression (unpenalised)",
+  "target": "sar_flag",
+  "event": 1,
+  "numeric_inputs": [
+    "account_age_months",
+    "pep_flag",
+    "high_risk_country_share",
+    "log_cash_deposit",
+    "n_cash_near_threshold",
+    "log_velocity_ratio",
+    "n_new_counterparties",
+    "n_intl_wires",
+    "cash_per_txn",
+    "new_account"
+  ],
+  "categorical_inputs": [
+    "segment"
+  ],
+  "metrics": {
+    "valid_auc": 0.86122,
+    "valid_ks": 0.55171,
+    "valid_recall_top_5pct": 0.42541
+  },
+  "data_commit": "39c05a1c7861afeffc5981bd19c31ca59df3404f",
+  "data_sha256": "457af3626244263933acc165895a414b9683f369c35514d8635b1d752406ad53",
+  "pickle_sha256": "875ac0c5366ad1d7ba5bb70b116257864e43ce8afbcd37637cd71498600fed0b",
+  "python_version": "3.11.9",
+  "sklearn_version": "1.9.0",
+  "pandas_version": "3.0.3",
+  "trained_utc": "2026-11-24T01:08:08.774532+00:00",
+  "trained_in": "local Python"
+}
