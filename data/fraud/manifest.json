@@ -1,0 +1,41 @@
+{
+  "description": "Synthetic card and payment transactions. Not real customer data.",
+  "generator_seed": 7,
+  "target": "fraud_flag",
+  "customers_from": {
+    "path": "data/aml_model.csv",
+    "commit": "6b21642794f65a441f21c4b1077b6d903eb665ae"
+  },
+  "partition": {
+    "train": "2025-07-01 to 2025-11-01",
+    "valid": "2025-11-01 to 2026-01-01"
+  },
+  "created_utc": "2026-11-24T16:44:01.768603+00:00",
+  "created_in": "local Python",
+  "files": {
+    "data/fraud/fraud_transactions.csv": {
+      "rows": 152256,
+      "fraud_rate": 0.00509,
+      "sha256": "d96f3236e198e9b0d622d37490a6c3d0029dbae26b21b4920c9de33a87a3e636",
+      "mb": 17.2
+    },
+    "data/fraud/fraud_monitoring_2026Q1.csv": {
+      "rows": 40616,
+      "fraud_rate": 0.00507,
+      "sha256": "3fa0b88b7aae2298ccdd5fa8d42c417d59075465a075cc36224090278436222d",
+      "mb": 4.3
+    },
+    "data/fraud/fraud_monitoring_2026Q2.csv": {
+      "rows": 40703,
+      "fraud_rate": 0.00762,
+      "sha256": "5fdd34b2bf01da289908522b386b591fe1bc56ab4d4979f8f2830bb7e653bb16",
+      "mb": 4.3
+    },
+    "data/fraud/fraud_monitoring_2026Q3.csv": {
+      "rows": 40795,
+      "fraud_rate": 0.01005,
+      "sha256": "692b923c4b70e0fed42de48787a0d4b326af8b07acffebe3200ad2ad43a21ac5",
+      "mb": 4.4
+    }
+  }
+}
