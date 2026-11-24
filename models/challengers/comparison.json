@@ -36,7 +36,7 @@
       "brier": 0.025141607346364326
     }
   },
-  "created_utc": "2026-11-24T14:53:56.557855+00:00",
+  "created_utc": "2026-11-24T17:52:34.984355+00:00",
   "models": {
     "decision_tree": {
       "algorithm": "sasviya.ml.tree.dtree.DecisionTreeClassifier",
@@ -47,7 +47,7 @@
       "inputs": "segment as nominal",
       "family": "tree",
       "explained_by": "if-then rules",
-      "fit_seconds": 0.15,
+      "fit_seconds": 0.14,
       "lifecycle": "reference",
       "promote_recommended": false,
       "metrics": {
@@ -60,10 +60,10 @@
         "brier": 0.02818362369212172
       },
       "pickle": "models/challengers/aml_sar_decision_tree_sasviya.pickle",
-      "pickle_sha256": "30f03b6c8dc45a6dbb3a8f40bc84084eff243ecab90ce4b46b4ecf5955813f96",
+      "pickle_sha256": "df233349abdb3a487708d7d14d291f63cf65f470e40e6ff858f099aff1268e44",
       "scoring_runtime": "needs sasviya.ml (SAS Viya)",
       "astore": "models/challengers/aml_sar_decision_tree_sasviya.sasast",
-      "astore_sha256": "75e8d5397b70bc7ab1cbaae766710d6da68d8641cbaedb6ba956213bdcddfb61"
+      "astore_sha256": "3bdce3c066c8b3622412b3fe8e86a085fede21324c84ddde0834064a8c5034a3"
     },
     "forest": {
       "algorithm": "sasviya.ml.tree.forest.ForestClassifier",
@@ -75,7 +75,7 @@
       "inputs": "segment as nominal",
       "family": "tree ensemble",
       "explained_by": "feature importance",
-      "fit_seconds": 3.78,
+      "fit_seconds": 3.74,
       "lifecycle": "rejected",
       "promote_recommended": false,
       "metrics": {
@@ -88,10 +88,10 @@
         "brier": 0.02846207962962963
       },
       "pickle": "models/challengers/aml_sar_forest_sasviya.pickle",
-      "pickle_sha256": "d6760d67aa46fb66f071ea1f55da42976ec24af1a67a058c6b85dced33493803",
+      "pickle_sha256": "a6fdefb66004a39dd644801f60ce4361204a0714bb44af61724c24ba93da4a9b",
       "scoring_runtime": "needs sasviya.ml (SAS Viya)",
       "astore": "models/challengers/aml_sar_forest_sasviya.sasast",
-      "astore_sha256": "a1b2f6a2e833dd7d27f10759547650af1320899605b5acded0e375725b33f42a"
+      "astore_sha256": "91d00d09dc3aa966c5dc29f7303123c3e14d38b635c2515e24af76660f231159"
     },
     "gradient_boosting": {
       "algorithm": "sasviya.ml.tree.gradboost.GradientBoostingClassifier",
@@ -104,7 +104,7 @@
       "inputs": "segment as nominal",
       "family": "tree ensemble",
       "explained_by": "feature importance",
-      "fit_seconds": 1.03,
+      "fit_seconds": 1.05,
       "lifecycle": "challenger",
       "promote_recommended": false,
       "metrics": {
@@ -117,10 +117,14 @@
         "brier": 0.027239838379220307
       },
       "pickle": "models/challengers/aml_sar_gradient_boosting_sasviya.pickle",
-      "pickle_sha256": "23f8e2785aedcf05cc917ec1af9d256a00ae519100d2d22e343cc2359923a0c8",
+      "pickle_sha256": "7c48818edf2d63d9316b096fd0f497daa05bafd59d10896caa9396987ec74ace",
       "scoring_runtime": "needs sasviya.ml (SAS Viya)",
       "astore": "models/challengers/aml_sar_gradient_boosting_sasviya.sasast",
-      "astore_sha256": "3eb7c034d65a53e363208082696dc6ac89502e9a9d90628586495a85f15e4303"
+      "astore_sha256": "ea503e21ef8a0c83f3d3c3053df8422e996d71806d8a218c9ce25df6c0d8db46"
     }
+  },
+  "scores": {
+    "path": "models/challengers/scores.csv",
+    "sha256": "065f8c4e3a41201b263e1a1c30b71df451d4ea8c535d66f6c5aebaa248f27e75"
   }
 }
