@@ -1,0 +1,44 @@
+{
+  "name": "aml_logreg_production",
+  "status": "production",
+  "algorithm": "Logistic regression (unpenalised)",
+  "built_with": "PROC LOGISTIC (SAS score code) and scikit-learn (pickle), same rows",
+  "target": "sar_flag",
+  "event": 1,
+  "numeric_inputs": [
+    "account_age_months",
+    "pep_flag",
+    "high_risk_country_share",
+    "log_cash_deposit",
+    "n_cash_near_threshold",
+    "log_velocity_ratio",
+    "n_new_counterparties",
+    "n_intl_wires",
+    "cash_per_txn",
+    "new_account"
+  ],
+  "categorical_inputs": [
+    "segment"
+  ],
+  "metrics_sas": {
+    "valid_ks": 0.60500563288843,
+    "valid_recall_top_5pct": 0.46111111111111,
+    "valid_auc": 0.87929961238089
+  },
+  "metrics_python": {
+    "valid_auc": 0.8792996123808978,
+    "valid_ks": 0.6050056328884307,
+    "valid_recall_top_5pct": 0.46111111111111114
+  },
+  "max_diff_sas_vs_python": 2.3873507222771373e-06,
+  "data_path": "sasnb/data/aml_model.csv",
+  "data_commit": "62c499674339a1779da2050fc937e2fe2f4a1521",
+  "data_sha256": "2c28337c167935d5444a34db9b348c7f01a3bf30b05867dffae89fd99ae7699f",
+  "pickle_sha256": "207db68673303d73801809e7b8a9a2ae1c56f9563781d74b16efb52965b724fc",
+  "sas_score_code_sha256": "867608a53c1837952d34218d013b635fff0268657fcf5f0999ffb514f8909735",
+  "python_version": "3.11.11",
+  "sklearn_version": "1.6.1",
+  "pandas_version": "2.3.3",
+  "trained_utc": "2026-11-24T13:43:57.487141+00:00",
+  "trained_in": "SAS notebook"
+}
