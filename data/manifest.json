@@ -1,0 +1,29 @@
+{
+  "description": "Synthetic AML customer-month data. Not real customer data.",
+  "generator_seed": 42,
+  "target": "sar_flag",
+  "created_utc": "2026-11-24T01:07:36.517141+00:00",
+  "created_in": "local Python",
+  "files": {
+    "data/aml_model.csv": {
+      "rows": 20000,
+      "sar_rate": 0.03015,
+      "sha256": "457af3626244263933acc165895a414b9683f369c35514d8635b1d752406ad53"
+    },
+    "data/aml_monitoring_2026Q1.csv": {
+      "rows": 4000,
+      "sar_rate": 0.025,
+      "sha256": "ea80fdedea4bb05c9bbac30f50143b3a1d3ee6fa9ccb3c618fbf4d8bc0a5aca1"
+    },
+    "data/aml_monitoring_2026Q2.csv": {
+      "rows": 4000,
+      "sar_rate": 0.036,
+      "sha256": "85746851f54c0644f3b41d1e75ccca71ab9d5a83485157029fd40d8a3fb3aa5b"
+    },
+    "data/aml_monitoring_2026Q3.csv": {
+      "rows": 4000,
+      "sar_rate": 0.06025,
+      "sha256": "441a29c8a4ccdb98b8a0606810f9853c71b581d34ff70898dec4d5a8c32f1d21"
+    }
+  }
+}
