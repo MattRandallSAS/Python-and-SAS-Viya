@@ -1,0 +1,126 @@
+{
+  "built_in": "SAS Viya Compute (sasviya.ml)",
+  "python_version": "3.11.11",
+  "sasviya": {
+    "sasviya-assessbias": "0.3.306",
+    "sasviya-cardinality": "0.1.286",
+    "sasviya-svm": "0.3.3",
+    "sasviya-tree": "0.5.8",
+    "sasviya-cv": "0.38.1",
+    "sasviya-linear-model": "0.4.5",
+    "sasviya-preprocess": "0.2.47",
+    "sasviya-assess": "0.1.9",
+    "sasviya-bnet": "0.2.4",
+    "sasviya-mlcore": "0.3.2",
+    "sasviya-nlp": "0.15.1",
+    "sasviya-decomposition": "0.6.5",
+    "sasviya-network": "0.7.0",
+    "sasviya-dq": "0.4.3",
+    "sasviya-core": "0.25.20",
+    "sasviya-nominaldr": "0.2.1",
+    "sasviya-gmm": "0.1.355",
+    "sasviya-kmeans": "0.1.360",
+    "sasviya-graphics": "1.0.2"
+  },
+  "data_commit": "6b21642794f65a441f21c4b1077b6d903eb665ae",
+  "champion": {
+    "name": "logistic_regression",
+    "model_commit": "d145bfbf7db6dff2e736a459be6eaed5f169bc94",
+    "metrics": {
+      "auc": 0.8612204827204462,
+      "gini": 0.7224409654408923,
+      "ks": 0.5517057382037696,
+      "recall_top_2pct": 0.27071823204419887,
+      "recall_top_5pct": 0.425414364640884,
+      "recall_top_10pct": 0.5911602209944752,
+      "brier": 0.025141607346364326
+    }
+  },
+  "created_utc": "2026-11-24T14:53:56.557855+00:00",
+  "models": {
+    "decision_tree": {
+      "algorithm": "sasviya.ml.tree.dtree.DecisionTreeClassifier",
+      "settings": {
+        "max_depth": 5,
+        "min_samples_leaf": 100
+      },
+      "inputs": "segment as nominal",
+      "family": "tree",
+      "explained_by": "if-then rules",
+      "fit_seconds": 0.15,
+      "lifecycle": "reference",
+      "promote_recommended": false,
+      "metrics": {
+        "auc": 0.6775627374223704,
+        "gini": 0.3551254748447408,
+        "ks": 0.36618469312283347,
+        "recall_top_2pct": 0.13259668508287292,
+        "recall_top_5pct": 0.26519337016574585,
+        "recall_top_10pct": 0.39226519337016574,
+        "brier": 0.02818362369212172
+      },
+      "pickle": "models/challengers/aml_sar_decision_tree_sasviya.pickle",
+      "pickle_sha256": "30f03b6c8dc45a6dbb3a8f40bc84084eff243ecab90ce4b46b4ecf5955813f96",
+      "scoring_runtime": "needs sasviya.ml (SAS Viya)",
+      "astore": "models/challengers/aml_sar_decision_tree_sasviya.sasast",
+      "astore_sha256": "75e8d5397b70bc7ab1cbaae766710d6da68d8641cbaedb6ba956213bdcddfb61"
+    },
+    "forest": {
+      "algorithm": "sasviya.ml.tree.forest.ForestClassifier",
+      "settings": {
+        "n_estimators": 300,
+        "min_samples_leaf": 20,
+        "random_state": 42
+      },
+      "inputs": "segment as nominal",
+      "family": "tree ensemble",
+      "explained_by": "feature importance",
+      "fit_seconds": 3.78,
+      "lifecycle": "rejected",
+      "promote_recommended": false,
+      "metrics": {
+        "auc": 0.7146089349141078,
+        "gini": 0.42921786982821564,
+        "ks": 0.4074364887741529,
+        "recall_top_2pct": 0.19337016574585636,
+        "recall_top_5pct": 0.35359116022099446,
+        "recall_top_10pct": 0.4972375690607735,
+        "brier": 0.02846207962962963
+      },
+      "pickle": "models/challengers/aml_sar_forest_sasviya.pickle",
+      "pickle_sha256": "d6760d67aa46fb66f071ea1f55da42976ec24af1a67a058c6b85dced33493803",
+      "scoring_runtime": "needs sasviya.ml (SAS Viya)",
+      "astore": "models/challengers/aml_sar_forest_sasviya.sasast",
+      "astore_sha256": "a1b2f6a2e833dd7d27f10759547650af1320899605b5acded0e375725b33f42a"
+    },
+    "gradient_boosting": {
+      "algorithm": "sasviya.ml.tree.gradboost.GradientBoostingClassifier",
+      "settings": {
+        "n_estimators": 300,
+        "learning_rate": 0.05,
+        "max_depth": 4,
+        "random_state": 42
+      },
+      "inputs": "segment as nominal",
+      "family": "tree ensemble",
+      "explained_by": "feature importance",
+      "fit_seconds": 1.03,
+      "lifecycle": "challenger",
+      "promote_recommended": false,
+      "metrics": {
+        "auc": 0.8202839051725204,
+        "gini": 0.6405678103450407,
+        "ks": 0.500573943805727,
+        "recall_top_2pct": 0.2154696132596685,
+        "recall_top_5pct": 0.36464088397790057,
+        "recall_top_10pct": 0.4972375690607735,
+        "brier": 0.027239838379220307
+      },
+      "pickle": "models/challengers/aml_sar_gradient_boosting_sasviya.pickle",
+      "pickle_sha256": "23f8e2785aedcf05cc917ec1af9d256a00ae519100d2d22e343cc2359923a0c8",
+      "scoring_runtime": "needs sasviya.ml (SAS Viya)",
+      "astore": "models/challengers/aml_sar_gradient_boosting_sasviya.sasast",
+      "astore_sha256": "3eb7c034d65a53e363208082696dc6ac89502e9a9d90628586495a85f15e4303"
+    }
+  }
+}

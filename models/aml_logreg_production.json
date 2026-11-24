@@ -23,14 +23,15 @@
     "valid_auc": 0.86122,
     "valid_ks": 0.55171,
     "valid_recall_top_5pct": 0.42541,
-    "max_diff_vs_proc_logistic": 8.595156998914e-07
+    "max_diff_vs_proc_logistic": 8.595156998914e-07,
+    "max_diff_vs_sasviya_ml": 9.005078455692761e-07
   },
-  "data_commit": "64ee8825a62b6f424f09694799194e531bdbcb8b",
+  "data_commit": "6b21642794f65a441f21c4b1077b6d903eb665ae",
   "data_sha256": "db2063b9ecb8873825d716cc5ee33283bf34b025e9935d087d70e799c08d4a41",
   "pickle_sha256": "db36126b704e74ae3307bad9f084b0ff35d0a1f57d9e0a7f0fd56021519ff2ab",
   "python_version": "3.11.11",
   "sklearn_version": "1.6.1",
   "pandas_version": "2.3.3",
-  "trained_utc": "2026-11-24T09:34:33.618327+00:00",
+  "trained_utc": "2026-11-24T15:06:34.971800+00:00",
   "trained_in": "SAS Studio"
 }
