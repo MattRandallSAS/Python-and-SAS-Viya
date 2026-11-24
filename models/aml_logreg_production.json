@@ -22,14 +22,15 @@
   "metrics": {
     "valid_auc": 0.86122,
     "valid_ks": 0.55171,
-    "valid_recall_top_5pct": 0.42541
+    "valid_recall_top_5pct": 0.42541,
+    "max_diff_vs_proc_logistic": 8.595156998914e-07
   },
-  "data_commit": "39c05a1c7861afeffc5981bd19c31ca59df3404f",
-  "data_sha256": "457af3626244263933acc165895a414b9683f369c35514d8635b1d752406ad53",
-  "pickle_sha256": "875ac0c5366ad1d7ba5bb70b116257864e43ce8afbcd37637cd71498600fed0b",
-  "python_version": "3.11.9",
-  "sklearn_version": "1.9.0",
-  "pandas_version": "3.0.3",
-  "trained_utc": "2026-11-24T01:08:08.774532+00:00",
-  "trained_in": "local Python"
+  "data_commit": "64ee8825a62b6f424f09694799194e531bdbcb8b",
+  "data_sha256": "db2063b9ecb8873825d716cc5ee33283bf34b025e9935d087d70e799c08d4a41",
+  "pickle_sha256": "db36126b704e74ae3307bad9f084b0ff35d0a1f57d9e0a7f0fd56021519ff2ab",
+  "python_version": "3.11.11",
+  "sklearn_version": "1.6.1",
+  "pandas_version": "2.3.3",
+  "trained_utc": "2026-11-24T09:07:19.340578+00:00",
+  "trained_in": "SAS Studio"
 }
