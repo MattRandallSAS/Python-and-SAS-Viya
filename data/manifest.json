@@ -1,0 +1,29 @@
+{
+  "description": "Synthetic AML customer-month data. Not real customer data.",
+  "generator_seed": 42,
+  "target": "sar_flag",
+  "created_utc": "2026-11-24T09:05:20.021204+00:00",
+  "created_in": "SAS Studio",
+  "files": {
+    "data/aml_model.csv": {
+      "rows": 20000,
+      "sar_rate": 0.03015,
+      "sha256": "db2063b9ecb8873825d716cc5ee33283bf34b025e9935d087d70e799c08d4a41"
+    },
+    "data/aml_monitoring_2026Q1.csv": {
+      "rows": 4000,
+      "sar_rate": 0.025,
+      "sha256": "7365d6e82adcd2013b9ddc6ded2f689bcbbd4f5ad2f5b6c8668347daba73f3f0"
+    },
+    "data/aml_monitoring_2026Q2.csv": {
+      "rows": 4000,
+      "sar_rate": 0.036,
+      "sha256": "7c2227823722179b34085625c6ad44b0d7a1fb806033fd7efe50a7abe974bc46"
+    },
+    "data/aml_monitoring_2026Q3.csv": {
+      "rows": 4000,
+      "sar_rate": 0.06025,
+      "sha256": "28a7dee13076fc2d0964c317b9a49b5b7c74481f40bc159274275cbdace95f18"
+    }
+  }
+}
